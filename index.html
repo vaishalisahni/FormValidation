@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form-Validation</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <main>
+        
+        <div class="form-container">
+            <form id="ValidationForm">
+                <h1>Sign Up</h1>
+                <div id="username" class="input-container username">
+                    <label for="username-input">Username:</label>
+                    <input type="text" name="username" id="username-input" placeholder="Choose a username">
+                    <p class="input-error"> </p>
+                </div>
+
+                <div id="email" class="input-container email">
+                    <label for="email-input">Email:</label>
+                    <input type="email" name="email" id="email-input" placeholder="Enter your email" >
+                    <p class="input-error"> </p>
+                </div>
+
+                <div id="password" class="input-container password">
+                    <label for="password-input">Password:</label>
+                    <input type="password" name="password" id="password-input" placeholder="Enter a strong password" autocomplete="off">
+                    <p class="input-error"> </p> 
+                </div>
+
+                <div id="confirm-password" class="input-container confirm-password">
+                    <label for="confirm-password-input">Confirm Password:</label>
+                    <input type="password" name="confirm-password" id="confirm-password-input" placeholder="Re-enter your password" autocomplete="off">
+                    <p class="input-error"> </p>
+                </div>      
+
+                <div id="show-password" class="input-container show-password">
+                    <input type="checkbox" id="show-password-input" name="show-password-input">
+                    <label for="show-password-input"> Show Password</label>
+                </div>
+                <button type="submit" id="submit"> SIGN UP</button>
+
+            </form>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
